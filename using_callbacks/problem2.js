@@ -74,7 +74,7 @@ function convertToLowercase(new_file, callback) {
 // 4. Read the new files, sort the content, write it out to a new file. Store the name of the new file in filenames.txt
 function sortFile(new_file2, callback) {
     fs.readFile(new_file2, 'utf-8', (err, data) => {
-        if (err) {git remote add origin git@github.com:sanjugang/fs-drills.git
+        if (err) {
             console.error("Error reading new file2", err);
             return callback(err);
         }
